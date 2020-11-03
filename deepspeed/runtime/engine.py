@@ -540,8 +540,8 @@ class DeepSpeedEngine(Module):
             self.optimizer = self._configure_fp16_optimizer(basic_optimizer)
         else:
             self.optimizer = basic_optimizer
-        logger.info('DeepSpeed Final Optimizer = {}'.format(self.optimizer))
-        logger.info('DeepSpeed Final Optimizer = {}'.format(self.optimizer.state_dict()))
+        # logger.info('DeepSpeed Final Optimizer = {}'.format(self.optimizer))
+        # logger.info('DeepSpeed Final Optimizer = {}'.format(self.optimizer.state_dict()))
 
     def _configure_basic_optimizer(self, model_parameters):
         optimizer_parameters = self.optimizer_params()
